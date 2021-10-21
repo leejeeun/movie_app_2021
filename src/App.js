@@ -31,7 +31,8 @@ class App extends React.Component {
                            <span className="loader_text">Loading...</span> 
                         </div>
                         :
-                        <div className="movies">
+                        <ul className="movie-box">
+                        <li className="movies">
                        { movies.map(movie => 
                             <Movie
                                 key={movie.id}
@@ -43,8 +44,8 @@ class App extends React.Component {
                                 genres={movie.genres}
                              />
                         )}
-                        </div>
-                        
+                        </li>
+                        </ul>
             }
             </section>
 
