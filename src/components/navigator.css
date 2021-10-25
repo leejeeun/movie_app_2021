@@ -1,0 +1,22 @@
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.asd{
+    background-color: #fff;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 100px;
+}
+.asd a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px 0;
+}
