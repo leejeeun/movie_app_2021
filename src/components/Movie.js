@@ -1,10 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import "./movie.css"
 // style={{backgroundColor : "red"}}
-function Movie({ year, title, summary, poster, genres}){
+function Movie({id, year, title, summary, poster, genres}){
     return (
-      
+      <Link to={{
+          pathname:`/movie/${id}`,
+          state:{
+              year,
+              title,
+              summary,
+              poster,
+              genres
+          }
+      }}>
             <li className="movie">
                 <img src={poster} alt={title} title={title}/>
                 <ul className="movie_data">
@@ -19,7 +29,7 @@ function Movie({ year, title, summary, poster, genres}){
                 
                 </ul>
             </li>
-        
+      </Link>  
     )
 }
 Movie.prototype = {
