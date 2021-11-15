@@ -5,17 +5,20 @@ import "./movie.css"
 // style={{backgroundColor : "red"}}
 function Movie({id, year, title, summary, poster, genres}){
     return (
-      <Link to={{
-          pathname:`/movie/${id}`,
-          state:{
-              year,
-              title,
-              summary,
-              poster,
-              genres
-          }
-      }}>
-            <li className="movie">
+     
+            <li className="movies">
+                <div className="movie">
+                 <Link to={{
+                    pathname:`/movie/${id}`,
+                    
+                    state:{
+                        year,
+                        title,
+                        summary,
+                        poster,
+                        genres
+                    }
+                }}>
                 <img src={poster} alt={title} title={title}/>
                 <ul className="movie_data">
                     <li className="movie_title" >{title}</li>
@@ -28,8 +31,10 @@ function Movie({id, year, title, summary, poster, genres}){
                     <li className="movie_summary">{summary.slice(0,100)}...</li>
                 
                 </ul>
+                </Link>  
+                </div>
             </li>
-      </Link>  
+     
     )
 }
 Movie.prototype = {

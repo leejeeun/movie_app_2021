@@ -32,19 +32,18 @@ class Home extends React.Component {
                         </div>
                         :
                         <ul className="movie-box">
-                        <li className="movies">
-                       { movies.map(movie => 
-                            <Movie
-                                key={movie.id}
-                                id={movie.id}
-                                year={movie.year}
-                                title={movie.title}
-                                summary={movie.summary}
-                                poster={movie.medium_cover_image}
-                                genres={movie.genres}
-                             />
-                        )}
-                        </li>
+                       
+                            { movies.map(movie => 
+                                    <Movie
+                                        key={movie.id}
+                                        id={movie.id}
+                                        year={movie.year}
+                                        title={movie.title}
+                                        summary={movie.summary}
+                                        poster={movie.medium_cover_image}
+                                        genres={movie.genres}
+                                    />
+                                )}
                         </ul>
             }
             </section>

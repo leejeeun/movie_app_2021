@@ -35,7 +35,7 @@ ul {
  flex-wrap: wrap;
   padding: 50px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 624px;
   padding-top: 70px;
 }
 
@@ -43,7 +43,7 @@ ul {
 
 .movies .movie {
   width: 100%;
-  max-width: 550px;
+  max-width: 565px;
   background-color: white;
   margin-right: 20px;
   margin-bottom: 70px;
@@ -96,10 +96,6 @@ ul {
   margin-top: 10px;
 }
 
-.genres .genres_genre {
-  margin-right: 10px;
-
-}
 
 .movie .movie_genres {
   list-style: none;
